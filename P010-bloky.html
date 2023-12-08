@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloky</title>
+    <style>
+            div{
+                background-color: rgb(114, 114, 236) ;
+            }
+            span{
+                background-color:rgb(247, 239, 130) ;
+            }
+            .trida{ /*selektor tridy/class- může být u více různých prvků*/
+                    color: rgb(255, 0, 0);
+            }
+            #prvni_id{ /*selektor id - pouze pro jeden objekt*/
+                    font-size: 20px;
+                    color:rgba(0, 162, 255, 0.473); 
+            }
+            p{
+                color:rgba(0, 162, 255, 0.473); 
+            }
+    </style>
+</head>
+<body>
+    <div> toto je blok div </div>
+    <span> Toto je inline-blok span </span>    Tohle je běžný text 
+
+    <h1>ukazka class a id</h1>
+    <div class="trida">
+        <h2>Ukazka class</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae veniam perferendis reiciendis dolorem
+        alias animi consequatur necessitatibus sapiente nostrum. Nostrum dolorem, esse aspernatur unde tempore delectus maiores quaerat earum?
+    </div>
+    <div id="prvni_id">
+        <h2>Ukazka id</h2>
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Non velit laboriosam quaerat voluptate in soluta aliquam, assumenda labore ea repudiandae minima eum 
+        quis quod qui esse at ducimus quia temporibus?
+    </div>
+    <p id="prvni_id">   
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Non velit laboriosam quaerat voluptate in soluta aliquam, assumenda labore ea repudiandae minima eum 
+        quis quod qui esse at ducimus quia temporibus?
+    </p>
+    <p class="trida">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae veniam perferendis reiciendis dolorem
+        alias animi consequatur necessitatibus sapiente nostrum. Nostrum dolorem, esse aspernatur unde tempore delectus maiores quaerat earum?
+    </p>
+</body>
+</html>

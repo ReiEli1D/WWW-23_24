@@ -1,0 +1,57 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+            <title> Import fontu a písma </title>
+           <style>
+           p{
+            text-decoration: line-through;
+            color: darkblue;
+            font-size: 24px;
+            font-style: italic;
+            text-align: justify;
+            font-weight: 900;
+            text-transform: lowercase;
+            font-family: 'Times New Roman', Times, serif;/*pokud má název mezery dává se do uvozovek*/
+           }
+           body{ 
+                font-family: Arial, Helvetica, sans-serif; /*font-family - čárkou oddělujeme dodatečnéfonty*/ /*hlavní bezpatkové Montserrat, Poppins a Roboto*/
+           }
+           /*----------------*/
+           /*připojení externího fontu*/
+           h1{
+                font-family:'Roboto' 
+            }
+            
+            @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+
+            h2{
+                font-family: 'Handjet', sans-serif;
+            }
+
+            /*Připojení staženého fontu*/
+            @font-face {
+                font-family:'The_font' ;/*deklarujete vy*/
+                src: url(Handjet-VariableFont_ELGR\,ELSH\,wght.ttf);
+                
+            }
+            h3{
+                        font-family: "The_font";
+                }
+           </style>
+        </head>
+        <body>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ut accusantium sapiente non. Ipsam,
+                 maiores minus voluptas qui doloribus iure molestiae, dolorum dolore hic laborum at cumque laboriosam perferendis incidunt! Lorem ipsum dolor sit, 
+                 amet consectetur adipisicing elit. Tenetur dolore recusandae saepe fugit vel et soluta ducimus,
+                  ipsam odit beatae facilis similique repellat consequuntur. Nihil, veniam omnis. Quia, alias aperiam!</p>
+                  <h1>Zde je první font - Roboto</h1>
+                  <h2> Zde je druhý font - Handjet </h2>
+                  <h3> Zde je font - Handjet </h3>
+        </body>
+    </html>
